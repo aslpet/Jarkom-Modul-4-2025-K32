@@ -14,9 +14,11 @@ iface eth1 inet static
 # CLI Interface
 up echo 1 > /proc/sys/net/ipv4/ip_forward
 
+up ip addr flush dev eth0
 up ip addr add 192.227.15.179/29 dev eth0
 up ip link set eth0 up
 
+up ip addr flush dev eth1
 up ip addr add 192.227.12.1/23 dev eth1
 up ip link set eth1 up
 
