@@ -23,37 +23,37 @@ iface eth3 inet static
 
 # CLI Interface
 #!/bin/bash
-echo 1 > /proc/sys/net/ipv4/ip_forward
+up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # --- Interfaces ---
-ip addr flush dev eth0
-ip addr add 192.227.15.230/30 dev eth0
-ip link set eth0 up
+up ip addr flush dev eth0
+up ip addr add 192.227.15.230/30 dev eth0
+up ip link set eth0 up
 
-ip addr flush dev eth1
-ip addr add 192.227.15.221/30 dev eth1
-ip link set eth1 up
+up ip addr flush dev eth1
+up ip addr add 192.227.15.221/30 dev eth1
+up ip link set eth1 up
 
-ip addr flush dev eth2
-ip addr add 192.227.15.225/30 dev eth2
-ip link set eth2 up
+up ip addr flush dev eth2
+up ip addr add 192.227.15.225/30 dev eth2
+up ip link set eth2 up
 
-ip addr flush dev eth3
-ip addr add 192.227.0.1/22 dev eth3
-ip link set eth3 up
+up ip addr flush dev eth3
+up ip addr add 192.227.0.1/22 dev eth3
+up ip link set eth3 up
 
 # --- ROUTE ---
-ip route add default via 192.227.15.229
+up ip route add default via 192.227.15.229
 
 # LAN A10
-ip route add 192.227.0.0/22 dev eth3
+up ip route add 192.227.0.0/22 dev eth3
 
 # via Mordor
-ip route add 192.227.15.217/30 via 192.227.15.222
-ip route add 192.227.10.0/23 via 192.227.15.222
-ip route add 192.227.8.0/23 via 192.227.15.222
+up ip route add 192.227.15.217/30 via 192.227.15.222
+up ip route add 192.227.10.0/23 via 192.227.15.222
+up ip route add 192.227.8.0/23 via 192.227.15.222
 
 # via Gudur
-ip route add 192.227.15.161/28 via 192.227.15.226
-ip route add 192.227.14.129/25 via 192.227.15.226
+up ip route add 192.227.15.161/28 via 192.227.15.226
+up ip route add 192.227.14.129/25 via 192.227.15.226
 

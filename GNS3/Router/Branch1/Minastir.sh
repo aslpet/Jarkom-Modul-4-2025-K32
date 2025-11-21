@@ -28,26 +28,26 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # ----------- INTERFACES -----------
 
-ip addr flush dev eth0
-ip addr add 192.227.15.214/30 dev eth0
-ip link set eth0 up
+up ip addr flush dev eth0
+up ip addr add 192.227.15.214/30 dev eth0
+up ip link set eth0 up
 
-ip addr flush dev eth1
-ip addr add 192.227.15.209/30 dev eth1
-ip link set eth1 up
+up ip addr flush dev eth1
+up ip addr add 192.227.15.209/30 dev eth1
+up ip link set eth1 up
 
-ip addr flush dev eth2
-ip addr add 192.227.15.205/30 dev eth2
-ip link set eth2 up
+up ip addr flush dev eth2
+up ip addr add 192.227.15.205/30 dev eth2
+up ip link set eth2 up
 
 # ----------- STATIC ROUTES -----------
 # --- Routes via ANOR
-ip route add 192.227.4.0/22 via 192.227.15.206
+up ip route add 192.227.4.0/22 via 192.227.15.206
 
 # --- Routes via AMROTH
-ip route add 192.227.15.184/29 via 192.227.15.210
-ip route add 192.227.15.0/26 via 192.227.15.210
-ip route add 192.227.15.192/29 via 192.227.15.210
+up ip route add 192.227.15.184/29 via 192.227.15.210
+up ip route add 192.227.15.0/26 via 192.227.15.210
+up ip route add 192.227.15.192/29 via 192.227.15.210
 
 # --- Default route to AMONSUL
-ip route add default via 192.227.15.213
+up ip route add default via 192.227.15.213

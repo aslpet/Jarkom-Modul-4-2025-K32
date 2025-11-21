@@ -16,23 +16,23 @@ iface eth1 inet static
 
 # CLI Interface
 #!/bin/bash
-echo 1 > /proc/sys/net/ipv4/ip_forward
+up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # --- Interfaces ---
-ip addr flush dev eth0
-ip addr add 192.227.15.187/29 dev eth0
-ip link set eth0 up
+up ip addr flush dev eth0
+up ip addr add 192.227.15.187/29 dev eth0
+up ip link set eth0 up
 
-ip addr flush dev eth1
-ip addr add 192.227.15.193/29 dev eth1
-ip link set eth1 up
+up ip addr flush dev eth1
+up ip addr add 192.227.15.193/29 dev eth1
+up ip link set eth1 up
 
 # --- Routes ---
 
 # A3 LAN (Erendis/Elrond) via Morgoth
-ip route add 192.227.15.0/26 via 192.227.15.186
+up ip route add 192.227.15.0/26 via 192.227.15.186
 
 # A1 Subnet (Beacon/Silmarlis) via Morgoth → Amroth → Minastir → Anor
 # cukup default via Morgoth
-ip route add default via 192.227.15.186
+up ip route add default via 192.227.15.186
 
