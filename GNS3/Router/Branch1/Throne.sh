@@ -34,5 +34,5 @@ up ip route add 192.227.15.0/26 via 192.227.15.186
 
 # A1 Subnet (Beacon/Silmarlis) via Morgoth → Amroth → Minastir → Anor
 # cukup default via Morgoth
-up ip route add default via 192.227.15.186
+up ip route add default via 192.227.15.185
 
