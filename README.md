@@ -6,7 +6,7 @@
 |1. | Tasya Aulia Darmawan | 5027241009|
 |2. | Ahmad Rafi F D | 5027241068|
 
-#### Cisco Packet Tracer - CIDR
+## Cisco Packet Tracer - CIDR
 
 ![Assets/topo](Assets/topo.png)
 
@@ -163,3 +163,4 @@ Berikut adalah daftar konfigurasi IP Address untuk setiap interface router.
 - `eth0`: 192.227.15.179/29 (Link ke Fornost [A22])
 - `eth1`: 192.227.12.1/23 (LAN Shadow, Anarion [A21])
 ![Assets/TopologiGNS.png](Assets/TopologiGNS.png)
+
