@@ -54,6 +54,6 @@ up ip route add 192.227.10.0/23 via 192.227.15.222
 up ip route add 192.227.8.0/23 via 192.227.15.222
 
 # via Gudur
-up ip route add 192.227.15.160/28 via 192.227.15.226
-up ip route add 192.227.14.128/25 via 192.227.15.226
+up ip route add 192.227.15.161/28 via 192.227.15.226
+up ip route add 192.227.14.129/25 via 192.227.15.226
 

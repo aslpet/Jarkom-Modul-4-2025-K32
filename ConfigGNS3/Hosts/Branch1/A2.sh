@@ -15,7 +15,7 @@ ip addr flush dev eth0
 ip addr add 192.227.15.194/29 dev eth0
 ip link set eth0 up
 ip route add default via 192.227.15.193
-echo "nameserver 192.168.122.1" > /etc/resolv.conf
+
 echo "[Erebor ready]"
 
 

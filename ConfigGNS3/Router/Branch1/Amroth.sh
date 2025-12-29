@@ -39,3 +39,5 @@ up ip route add 192.227.15.192/29 via 192.227.15.187
 
 # Default ke Minastir
 up ip route add default via 192.227.15.209
+
+
